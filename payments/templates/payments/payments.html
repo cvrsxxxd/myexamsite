@@ -1,0 +1,1 @@
+<h1>Payment</h1><h2> Buy for 50$ </h2><form method = 'POST' action="">    {% csrf_token %}    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button">        data-key={{ key }}        data-description="Payments Gateway"        data-amount='500'        data-locale='auto'>    </script></form>
